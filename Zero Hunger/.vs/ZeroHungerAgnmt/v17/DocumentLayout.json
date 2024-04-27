@@ -1,0 +1,437 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "A:\\Dot net File\\Assignment\\Zero Hunger\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|a:\\dot net file\\assignment\\zero hunger\\zerohungeragnmt\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\views\\zerohunger\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\views\\zerohunger\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\models\\showparsel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\models\\showparsel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\views\\admin\\registaremp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\views\\admin\\registaremp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\models\\employedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\models\\employedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\models\\empdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\models\\empdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\views\\admin\\employeelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\views\\admin\\employeelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\views\\employe\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\views\\employe\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\views\\zerohunger\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\views\\zerohunger\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\views\\zerohunger\\parsel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\views\\zerohunger\\parsel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\views\\shared\\_resturent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\views\\shared\\_resturent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\views\\shared\\_employee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\views\\shared\\_employee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\models\\parselempdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\models\\parselempdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\models\\parseldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\models\\parseldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\controllers\\employecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\controllers\\employecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\models\\statusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\models\\statusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\models\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\models\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\views\\admin\\resturentlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\views\\admin\\resturentlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\models\\employeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\models\\employeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\models\\signupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\models\\signupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|A:\\Dot net File\\Assignment\\Zero Hunger\\zerohungeragnmt\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E974075C-C262-4289-B6DD-96A66B34B24E}|ZeroHungerAgnmt\\ZeroHungerAgnmt.csproj|solutionrelative:zerohungeragnmt\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_adminLayout.cshtml",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\Shared\\_adminLayout.cshtml",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Views\\Shared\\_adminLayout.cshtml",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\Shared\\_adminLayout.cshtml",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Views\\Shared\\_adminLayout.cshtml",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAAG4AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-03-21T13:40:58.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_employee.cshtml",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\Shared\\_employee.cshtml",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Views\\Shared\\_employee.cshtml",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\Shared\\_employee.cshtml",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Views\\Shared\\_employee.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-03-21T13:40:58.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\ZeroHunger\\Index.cshtml",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Views\\ZeroHunger\\Index.cshtml",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\ZeroHunger\\Index.cshtml",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Views\\ZeroHunger\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-03-21T13:40:58.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Controllers\\AdminController.cs",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAkwEUAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T13:40:59.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShowParsel.cs",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Models\\ShowParsel.cs",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Models\\ShowParsel.cs",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Models\\ShowParsel.cs",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Models\\ShowParsel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T13:41:00.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegistarEmp.cshtml",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\Admin\\RegistarEmp.cshtml",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Views\\Admin\\RegistarEmp.cshtml",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\Admin\\RegistarEmp.cshtml",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Views\\Admin\\RegistarEmp.cshtml",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAACoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-03-21T13:40:58.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EmpDTO.cs",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Models\\EmpDTO.cs",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Models\\EmpDTO.cs",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Models\\EmpDTO.cs",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Models\\EmpDTO.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAYwB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T13:40:58.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABwAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-03-21T13:40:57.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeDTO.cs",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Models\\EmployeDTO.cs",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Models\\EmployeDTO.cs",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Models\\EmployeDTO.cs",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Models\\EmployeDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T13:41:00.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmployeeList.cshtml",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\Admin\\EmployeeList.cshtml",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Views\\Admin\\EmployeeList.cshtml",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\Admin\\EmployeeList.cshtml",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Views\\Admin\\EmployeeList.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-03-21T13:41:00.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\Employe\\Index.cshtml",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Views\\Employe\\Index.cshtml",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\Employe\\Index.cshtml",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Views\\Employe\\Index.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-03-21T13:41:00.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SignUp.cshtml",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\ZeroHunger\\SignUp.cshtml",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Views\\ZeroHunger\\SignUp.cshtml",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\ZeroHunger\\SignUp.cshtml",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Views\\ZeroHunger\\SignUp.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-03-21T13:41:00.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Parsel.cshtml",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\ZeroHunger\\Parsel.cshtml",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Views\\ZeroHunger\\Parsel.cshtml",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\ZeroHunger\\Parsel.cshtml",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Views\\ZeroHunger\\Parsel.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-03-21T13:41:00.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_resturent.cshtml",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\Shared\\_resturent.cshtml",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Views\\Shared\\_resturent.cshtml",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\Shared\\_resturent.cshtml",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Views\\Shared\\_resturent.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACMAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-03-21T13:41:00.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "parselempDTO.cs",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Models\\parselempDTO.cs",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Models\\parselempDTO.cs",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Models\\parselempDTO.cs",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Models\\parselempDTO.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAkwAoAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T13:41:00.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ParselDTO.cs",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Models\\ParselDTO.cs",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Models\\ParselDTO.cs",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Models\\ParselDTO.cs",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Models\\ParselDTO.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T13:41:00.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAYwDQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-03-21T13:41:00.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EmployeController.cs",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Controllers\\EmployeController.cs",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Controllers\\EmployeController.cs",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Controllers\\EmployeController.cs",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Controllers\\EmployeController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAMwCUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T13:41:00.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "StatusDTO.cs",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Models\\StatusDTO.cs",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Models\\StatusDTO.cs",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Models\\StatusDTO.cs",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Models\\StatusDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T13:41:00.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Models\\LoginDto.cs",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Models\\LoginDto.cs",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Models\\LoginDto.cs",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Models\\LoginDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T13:41:00.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ResturentList.cshtml",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\Admin\\ResturentList.cshtml",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Views\\Admin\\ResturentList.cshtml",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\Admin\\ResturentList.cshtml",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Views\\Admin\\ResturentList.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-03-21T13:41:00.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "EmployeeViewModel.cs",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Models\\EmployeeViewModel.cs",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Models\\EmployeeViewModel.cs",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Models\\EmployeeViewModel.cs",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Models\\EmployeeViewModel.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T13:41:00.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SignUpDTO.cs",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Models\\SignUpDTO.cs",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Models\\SignUpDTO.cs",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Models\\SignUpDTO.cs",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Models\\SignUpDTO.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAgwB4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T13:41:00.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Controllers\\HomeController.cs",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAzwA0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T13:41:00.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Views\\Home\\Index.cshtml",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-03-21T13:41:00.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "ZeroHungerAgnmt\\Views\\Home\\About.cshtml",
+              "ToolTip": "A:\\Dot net File\\Assignment\\Zero Hunger\\ZeroHungerAgnmt\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "ZeroHungerAgnmt\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-03-21T13:41:00.191Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

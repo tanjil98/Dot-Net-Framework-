@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Zero_HungerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Accounts">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AccountId" Type="int" Nullable="false" />
+          <Property Name="AccountType" Type="nchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Emplyoes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Address" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Gender" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="LId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LoginInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="AccountType" Type="int" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Parsels">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FoodName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PreservationTime" Type="int" Nullable="false" />
+          <Property Name="TotalPacket" Type="int" Nullable="false" />
+          <Property Name="Employee" Type="int" />
+          <Property Name="Status" Type="nchar" MaxLength="10" />
+          <Property Name="RId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Resturents">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Address" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="LId" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Accounts_Accounts">
+          <End Role="Accounts" Type="Self.Accounts" Multiplicity="1" />
+          <End Role="Accounts1" Type="Self.Accounts" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Accounts">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Accounts1">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Emplyoes_LoginInfo1">
+          <End Role="LoginInfo" Type="Self.LoginInfo" Multiplicity="1" />
+          <End Role="Emplyoes" Type="Self.Emplyoes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LoginInfo">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Emplyoes">
+              <PropertyRef Name="LId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Parsels_Emplyoes">
+          <End Role="Emplyoes" Type="Self.Emplyoes" Multiplicity="0..1" />
+          <End Role="Parsels" Type="Self.Parsels" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Emplyoes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Parsels">
+              <PropertyRef Name="Employee" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Parsels_Resturents">
+          <End Role="Resturents" Type="Self.Resturents" Multiplicity="1" />
+          <End Role="Parsels" Type="Self.Parsels" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Resturents">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Parsels">
+              <PropertyRef Name="RId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Resturents_LoginInfo">
+          <End Role="LoginInfo" Type="Self.LoginInfo" Multiplicity="1" />
+          <End Role="Resturents" Type="Self.Resturents" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LoginInfo">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Resturents">
+              <PropertyRef Name="LId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Zero_HungerModelStoreContainer">
+          <EntitySet Name="Accounts" EntityType="Self.Accounts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Emplyoes" EntityType="Self.Emplyoes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LoginInfo" EntityType="Self.LoginInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Parsels" EntityType="Self.Parsels" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Resturents" EntityType="Self.Resturents" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Accounts_Accounts" Association="Self.FK_Accounts_Accounts">
+            <End Role="Accounts" EntitySet="Accounts" />
+            <End Role="Accounts1" EntitySet="Accounts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Emplyoes_LoginInfo1" Association="Self.FK_Emplyoes_LoginInfo1">
+            <End Role="LoginInfo" EntitySet="LoginInfo" />
+            <End Role="Emplyoes" EntitySet="Emplyoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Parsels_Emplyoes" Association="Self.FK_Parsels_Emplyoes">
+            <End Role="Emplyoes" EntitySet="Emplyoes" />
+            <End Role="Parsels" EntitySet="Parsels" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Parsels_Resturents" Association="Self.FK_Parsels_Resturents">
+            <End Role="Resturents" EntitySet="Resturents" />
+            <End Role="Parsels" EntitySet="Parsels" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Resturents_LoginInfo" Association="Self.FK_Resturents_LoginInfo">
+            <End Role="LoginInfo" EntitySet="LoginInfo" />
+            <End Role="Resturents" EntitySet="Resturents" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Zero_HungerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Account">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AccountId" Type="Int32" Nullable="false" />
+          <Property Name="AccountType" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Accounts1" Relationship="Self.FK_Accounts_Accounts" FromRole="Accounts" ToRole="Accounts1" />
+          <NavigationProperty Name="Account1" Relationship="Self.FK_Accounts_Accounts" FromRole="Accounts1" ToRole="Accounts" />
+        </EntityType>
+        <EntityType Name="Emplyo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Gender" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="LId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="LoginInfo" Relationship="Self.FK_Emplyoes_LoginInfo1" FromRole="Emplyoes" ToRole="LoginInfo" />
+          <NavigationProperty Name="Parsels" Relationship="Self.FK_Parsels_Emplyoes" FromRole="Emplyoes" ToRole="Parsels" />
+        </EntityType>
+        <EntityType Name="LoginInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AccountType" Type="Int32" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Emplyoes" Relationship="Self.FK_Emplyoes_LoginInfo1" FromRole="LoginInfo" ToRole="Emplyoes" />
+          <NavigationProperty Name="Resturents" Relationship="Self.FK_Resturents_LoginInfo" FromRole="LoginInfo" ToRole="Resturents" />
+        </EntityType>
+        <EntityType Name="Parsel">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FoodName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PreservationTime" Type="Int32" Nullable="false" />
+          <Property Name="TotalPacket" Type="Int32" Nullable="false" />
+          <Property Name="Employee" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="RId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Emplyo" Relationship="Self.FK_Parsels_Emplyoes" FromRole="Parsels" ToRole="Emplyoes" />
+          <NavigationProperty Name="Resturent" Relationship="Self.FK_Parsels_Resturents" FromRole="Parsels" ToRole="Resturents" />
+        </EntityType>
+        <EntityType Name="Resturent">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="LoginInfo" Relationship="Self.FK_Resturents_LoginInfo" FromRole="Resturents" ToRole="LoginInfo" />
+          <NavigationProperty Name="Parsels" Relationship="Self.FK_Parsels_Resturents" FromRole="Resturents" ToRole="Parsels" />
+        </EntityType>
+        <Association Name="FK_Accounts_Accounts">
+          <End Role="Accounts" Type="Self.Account" Multiplicity="1" />
+          <End Role="Accounts1" Type="Self.Account" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Accounts">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Accounts1">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Emplyoes_LoginInfo1">
+          <End Role="LoginInfo" Type="Self.LoginInfo" Multiplicity="1" />
+          <End Role="Emplyoes" Type="Self.Emplyo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LoginInfo">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Emplyoes">
+              <PropertyRef Name="LId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Parsels_Emplyoes">
+          <End Role="Emplyoes" Type="Self.Emplyo" Multiplicity="0..1" />
+          <End Role="Parsels" Type="Self.Parsel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Emplyoes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Parsels">
+              <PropertyRef Name="Employee" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Resturents_LoginInfo">
+          <End Role="LoginInfo" Type="Self.LoginInfo" Multiplicity="1" />
+          <End Role="Resturents" Type="Self.Resturent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LoginInfo">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Resturents">
+              <PropertyRef Name="LId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Parsels_Resturents">
+          <End Role="Resturents" Type="Self.Resturent" Multiplicity="1" />
+          <End Role="Parsels" Type="Self.Parsel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Resturents">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Parsels">
+              <PropertyRef Name="RId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Zero_HungerEntities2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Accounts" EntityType="Self.Account" />
+          <EntitySet Name="Emplyoes" EntityType="Self.Emplyo" />
+          <EntitySet Name="LoginInfoes" EntityType="Self.LoginInfo" />
+          <EntitySet Name="Parsels" EntityType="Self.Parsel" />
+          <EntitySet Name="Resturents" EntityType="Self.Resturent" />
+          <AssociationSet Name="FK_Accounts_Accounts" Association="Self.FK_Accounts_Accounts">
+            <End Role="Accounts" EntitySet="Accounts" />
+            <End Role="Accounts1" EntitySet="Accounts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Emplyoes_LoginInfo1" Association="Self.FK_Emplyoes_LoginInfo1">
+            <End Role="LoginInfo" EntitySet="LoginInfoes" />
+            <End Role="Emplyoes" EntitySet="Emplyoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Parsels_Emplyoes" Association="Self.FK_Parsels_Emplyoes">
+            <End Role="Emplyoes" EntitySet="Emplyoes" />
+            <End Role="Parsels" EntitySet="Parsels" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Resturents_LoginInfo" Association="Self.FK_Resturents_LoginInfo">
+            <End Role="LoginInfo" EntitySet="LoginInfoes" />
+            <End Role="Resturents" EntitySet="Resturents" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Parsels_Resturents" Association="Self.FK_Parsels_Resturents">
+            <End Role="Resturents" EntitySet="Resturents" />
+            <End Role="Parsels" EntitySet="Parsels" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Zero_HungerModelStoreContainer" CdmEntityContainer="Zero_HungerEntities2">
+          <EntitySetMapping Name="Accounts">
+            <EntityTypeMapping TypeName="Zero_HungerModel.Account">
+              <MappingFragment StoreEntitySet="Accounts">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+                <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Emplyoes">
+            <EntityTypeMapping TypeName="Zero_HungerModel.Emplyo">
+              <MappingFragment StoreEntitySet="Emplyoes">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="EName" ColumnName="EName" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="LId" ColumnName="LId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LoginInfoes">
+            <EntityTypeMapping TypeName="Zero_HungerModel.LoginInfo">
+              <MappingFragment StoreEntitySet="LoginInfo">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Parsels">
+            <EntityTypeMapping TypeName="Zero_HungerModel.Parsel">
+              <MappingFragment StoreEntitySet="Parsels">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="FoodName" ColumnName="FoodName" />
+                <ScalarProperty Name="PreservationTime" ColumnName="PreservationTime" />
+                <ScalarProperty Name="TotalPacket" ColumnName="TotalPacket" />
+                <ScalarProperty Name="Employee" ColumnName="Employee" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="RId" ColumnName="RId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Resturents">
+            <EntityTypeMapping TypeName="Zero_HungerModel.Resturent">
+              <MappingFragment StoreEntitySet="Resturents">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="RName" ColumnName="RName" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="LId" ColumnName="LId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

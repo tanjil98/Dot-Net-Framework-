@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "ResturentList";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+
+<h2 class="text-center">Resturent List</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Resturent Id</th>
+            <th>Name</th>
+            <th>Address</th>
+           
+
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.RName</td>
+                <td>@item.Address</td>
+         
+
+                <td>@item.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>

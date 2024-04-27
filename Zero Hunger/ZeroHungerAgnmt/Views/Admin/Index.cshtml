@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+
+
+<h2>Order List</h2>
+<br>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Resturent</th>
+            <th>Food Name</th>
+            <th>PreservationTime (Hour)</th>
+            <th>Total Packet Number</th>
+            <th>Status</th>
+            <th>Employee Status</th>
+            <th>Assign Employee</th> <!-- Add a new column for the action button -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Parsels)
+        {
+            <tr>
+                <td>@item.RName</td>
+                <td>@item.FoodName</td>
+                <td>@item.PreservationTime  (Hour)</td>
+                <td>@item.TotalPacket</td>
+                <td>@item.Status</td>
+               
+                <td>Not Assignt</td>
+                <td>
+                    <!-- Add a new column for the action button -->
+                    <form method="post" class="form-inline">
+                        <input type="hidden" name="Id" value="@item.Id"> <!-- Hidden input for order ID -->
+                        <!-- Add a dropdown list for employees -->
+                        <div class="form-group">
+                            <select name="Employee" id="employeeDropdown" class="form-control" required>
+                                <option value="" disabled selected>---Select Employee---</option>
+                                @foreach (var employee in Model.Employees)
+                                {
+                                    <option value="@employee.Id">@employee.Id: @employee.EName</option>
+                                }
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-warning">Distribute</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

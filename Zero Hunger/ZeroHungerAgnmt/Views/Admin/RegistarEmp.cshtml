@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "RegistarEmp";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+<div class="container">
+    <div class="row center-column">
+        <div class="col-md-6">
+            <div class="card-container ">
+                <h2 class="card-header">Registration Form</h2>
+
+                <form method="post" class="form-content" >
+                    <div class="form-group">
+                        <label for="Name">Name</label>
+                        <input type="text" class="form-control" name="EName" placeholder="Enter name" value="@(Model != null ? Model.EName : "")">
+                        <span class="error-message">@Html.ValidationMessage("EName")</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="email" class="form-control" name="Email" placeholder="Enter email" value="@(Model != null ? Model.Email : "")">
+                        <span class="error-message">@Html.ValidationMessage("Email")</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Address">Address</label>
+                        <textarea class="form-control" name="Address" placeholder="Address" rows="4">@Html.Raw(Model != null ? Model.Address : "")</textarea>
+                        <span class="error-message">@Html.ValidationMessage("Address")</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Password">Password</label>
+                        <input type="password" class="form-control" name="Password" placeholder="Enter password" value="@(Model != null ? Model.Password : "")">
+                        <span class="error-message">@Html.ValidationMessage("Password")</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <div>
+                            <input type="radio" id="male" name="Gender" value="male" @(Model != null && Model.Gender == "male" ? "checked" : "")>
+                            <label for="male">Male</label>
+
+                            <input type="radio" id="female" name="Gender" value="female" @(Model != null && Model.Gender == "female" ? "checked" : "")>
+                            <label for="female">Female</label>
+                        </div>
+                        <span class="error-message">@Html.ValidationMessage("Gender")</span>
+                    </div>
+                    <button type="submit" class="submit-button">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

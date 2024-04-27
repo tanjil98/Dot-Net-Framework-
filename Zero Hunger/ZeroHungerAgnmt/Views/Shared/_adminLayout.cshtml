@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+<style>
+    /* Add the styles from site.css here */
+    .card-container {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .form-content {
+        margin-left: 50px;
+    }
+
+    .card-header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .error-message {
+        color: red;
+    }
+
+    .submit-button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 120px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .center-column {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Adjust this if needed for the card height */
+    }
+
+    .center-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    h2 {
+        color: #007bff; /* Header color */
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2; /* Header row color */
+    }
+
+    td select {
+        width: 100%;
+    }
+
+    .btn-warning {
+        background-color: #ffc107; /* Button color */
+        color: #212529;
+        border: 1px solid #ffc107;
+    }
+
+        .btn-warning:hover {
+            background-color: #e0a800; /* Button color on hover */
+            border: 1px solid #e0a800;
+        }
+
+    </style>
+</head>
+<body>
+    @if (Session["UserId"] == null)
+    {
+        Response.Redirect("~/ZeroHunger/Login"); // Redirect to your logout URL
+        return; // Optional: to stop executing the rest of the code after redirection
+    }
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="more options">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("ZeroHunger", "Index", "Admin", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Admin")</li>
+                    <li>@Html.ActionLink("Employes", "EmployeeList", "Admin")</li>
+                    <li>@Html.ActionLink("AddEmp", "RegistarEmp", "Admin")</li>
+                    <li>@Html.ActionLink("Resturents", "ResturentList", "Admin")</li>
+                    <li>@Html.ActionLink("Parsels", "Allparsel", "Admin")</li>
+                    <li>@Html.ActionLink("Logout", "Logout", "ZeroHunger")</li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

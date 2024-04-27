@@ -1,0 +1,110 @@
+﻿@model ZeroHungerAgnmt.Models.LoginDto
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (TempData["msg"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["msg"]
+    </div>
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-container1 {
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 5px;
+        width: 300px;
+        text-align: center;
+        position: relative;
+        margin-left: 300px;
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    fieldset {
+        border: none;
+    }
+
+    legend {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+    b {
+        display: block;
+        margin-top: 20px;
+        color: #333;
+    }
+
+    .alert {
+        background-color: #dc3545;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .text-danger {
+        color: #dc3545;
+    }
+</style>
+
+
+<body>
+    <div class="card-container1">
+        <h2>Zero Hunger</h2>
+        <form method="post">
+            <fieldset>
+               
+                <input value="@(Model !=null ? Model.username : "")" class="form-control" type="text" name="username" placeholder="Username" />
+                <span class="text-danger">@Html.ValidationMessage("username")</span>
+                <input value="@(Model !=null ? Model.password : "")" class="form-control" type="password" name="password" placeholder="Password" />
+                <span class="text-danger">@Html.ValidationMessage("password")</span><br />
+                <button type="submit" class="btn-primary">Login</button>
+            </fieldset>
+        </form>
+        <b>@Html.ActionLink("Don't Have Account? Create New", "SignUp")</b>
+    </div>
+</body>

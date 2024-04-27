@@ -1,0 +1,45 @@
+﻿
+
+@{
+    Layout = "~/Views/Shared/_employee.cshtml";
+}
+
+<h2>Parsel</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Food Name</th>
+        <th>Preservation Time (Hour)</th>
+        <th>Total Packet Number</th>
+        <th>Status</th>
+        <th>Update Status</th>
+        
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.FoodName</td>
+            <td>@item.PreservationTime</td>
+            <td>@item.TotalPacket</td>
+            <td>@item.Status
+
+            <td>
+                <!-- Form with a hidden input for ID and a submit button -->
+                <form method="post" style="display: flex; align-items: center;">
+                    <input type="hidden" name="id" value="@item.Id" />
+
+                    <select class="form-control" name="status" required>
+                        <option value="" disabled selected>--Select Option--</option>
+                        <option value="Requested">Requested</option>
+                        <option value="Collected">Collected</option>
+                        <option value="Done">Distributed</option>
+                    </select>
+
+                    <button type="submit" class="btn btn-primary">Update</button>
+                </form>
+            </td>
+
+        </tr>
+    }
+</table>

@@ -1,0 +1,51 @@
+﻿@{
+    Layout = "~/Views/Shared/_resturent.cshtml";
+}
+
+@section content {
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Food Donate</h2>
+
+                <form class="stylish-form" method="post">
+                    <div class="form-group">
+                        <label for="FoodName">Food Name</label>
+                        <select name="FoodName" class="form-control">
+                            
+                                <option value="" selected>---Select here---</option>
+                                <option value="Birani">Birani</option>
+                                <option value="Beef">Beef</option>
+                                <option value="Pizza">Pizza</option>
+                                <option value="Pasta">Pasta</option>
+                                <option value="Mutton">Mutton</option>
+                                <option value="Sushi">Sushi</option>
+                                <option value="Chicken Curry">Chicken Curry</option>
+                                <option value="Fish Tacos">Fish Tacos</option>
+                                <option value="Vegetable Stir-Fry">Vegetable Stir-Fry</option>
+                                <option value="Lasagna">Lasagna</option>
+                            </select>
+                        <span class="text-danger"><b>@Html.ValidationMessage("FoodName")</b></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="PreservationTime">Maximum Preservation Time</label>
+                        <input type="number" name="PreservationTime" class="form-control" placeholder="Enter maximum preservation Hour">
+                        <span class="text-danger"><b>@Html.ValidationMessage("PreservationTime")</b></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="TotalPacket">Number of Packets</label>
+                        <input type="number" id="packet-count" name="TotalPacket" class="form-control" placeholder="Enter number of packets">
+                        <span class="text-danger"><b>@Html.ValidationMessage("TotalPacket")</b></span>
+                    </div>
+
+                    <input type="hidden" name="RId" value="@Session["UserId"]">
+                    <input type="hidden" name="Status" value="Requested">
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+}

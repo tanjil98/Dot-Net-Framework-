@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Zero_HungerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Accounts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="AccountType" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Emplyoes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Address" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Gender" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="LId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LoginInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AccountType" Type="int" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Parsels">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FoodName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PreservationTime" Type="int" Nullable="false" />
+    <Property Name="TotalPacket" Type="int" Nullable="false" />
+    <Property Name="Employee" Type="int" />
+    <Property Name="Status" Type="nchar" MaxLength="10" />
+    <Property Name="RId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Resturents">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Accounts_Accounts">
+    <End Role="Accounts" Type="Self.Accounts" Multiplicity="1" />
+    <End Role="Accounts1" Type="Self.Accounts" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Accounts1">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Emplyoes_LoginInfo1">
+    <End Role="LoginInfo" Type="Self.LoginInfo" Multiplicity="1" />
+    <End Role="Emplyoes" Type="Self.Emplyoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LoginInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Emplyoes">
+        <PropertyRef Name="LId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Parsels_Emplyoes">
+    <End Role="Emplyoes" Type="Self.Emplyoes" Multiplicity="0..1" />
+    <End Role="Parsels" Type="Self.Parsels" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emplyoes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Parsels">
+        <PropertyRef Name="Employee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Parsels_Resturents">
+    <End Role="Resturents" Type="Self.Resturents" Multiplicity="1" />
+    <End Role="Parsels" Type="Self.Parsels" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Resturents">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Parsels">
+        <PropertyRef Name="RId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Resturents_LoginInfo">
+    <End Role="LoginInfo" Type="Self.LoginInfo" Multiplicity="1" />
+    <End Role="Resturents" Type="Self.Resturents" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LoginInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Resturents">
+        <PropertyRef Name="LId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Zero_HungerModelStoreContainer">
+    <EntitySet Name="Accounts" EntityType="Self.Accounts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Emplyoes" EntityType="Self.Emplyoes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LoginInfo" EntityType="Self.LoginInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Parsels" EntityType="Self.Parsels" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Resturents" EntityType="Self.Resturents" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Accounts_Accounts" Association="Self.FK_Accounts_Accounts">
+      <End Role="Accounts" EntitySet="Accounts" />
+      <End Role="Accounts1" EntitySet="Accounts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Emplyoes_LoginInfo1" Association="Self.FK_Emplyoes_LoginInfo1">
+      <End Role="LoginInfo" EntitySet="LoginInfo" />
+      <End Role="Emplyoes" EntitySet="Emplyoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Parsels_Emplyoes" Association="Self.FK_Parsels_Emplyoes">
+      <End Role="Emplyoes" EntitySet="Emplyoes" />
+      <End Role="Parsels" EntitySet="Parsels" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Parsels_Resturents" Association="Self.FK_Parsels_Resturents">
+      <End Role="Resturents" EntitySet="Resturents" />
+      <End Role="Parsels" EntitySet="Parsels" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Resturents_LoginInfo" Association="Self.FK_Resturents_LoginInfo">
+      <End Role="LoginInfo" EntitySet="LoginInfo" />
+      <End Role="Resturents" EntitySet="Resturents" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Parsel";
+    Layout = "~/Views/Shared/_resturent.cshtml";
+}
+
+<h2>Parsel</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Food Name</th>
+        <th>PresarvationTime (Hour)</th>
+        <th>Total Packet Number</th>
+        <th>Status</th>
+        <th>EmployeeStatus</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.FoodName</td>
+            <td>@item.PreservationTime</td>
+            <td>@item.TotalPacket</td>
+            <td>@item.Status</td>
+            @{
+                var status = "";
+                if (@item.Employee == null)
+                {
+                    status = "Not Assigned";
+                }
+                else
+                {
+
+                    status = "Assigned to Id-" + @item.Employee;
+
+
+                }
+            }
+            <td>@status</td>
+        </tr>
+    }
+</table>
